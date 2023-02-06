@@ -1,0 +1,163 @@
+.answer {
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 50px;
+    border: 1px solid gray;
+    margin: 10px 0;
+}
+
+.answer:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 22px;
+}
+#wrapper, .create-wrapper {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.create-wrapper {
+    display: flex;
+}
+.create-wrapper input[type="checkbox"]{
+    top: 21px;
+    cursor: pointer;
+}
+
+.create-wrapper input[type="text"] {
+    position: absolute;
+    top: 15px;
+    left: 86px;
+    width: 69%;
+    height: 28px;
+    padding: 0 10px;
+}
+
+.create-wrapper .answer {
+    cursor: auto;
+}
+
+input.title-test {
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 20px;
+    width: 320px;
+}
+
+.buttons-choice {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.variants {
+    padding-left: 0;
+}
+
+.variants-wrap {
+    position: relative;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.next-question, .repeat-btn {
+    color: #fff;
+    background-color: rgb(54, 65, 223);
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    min-height: 42px;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+.repeat-btn {
+    margin-top: 20px;
+}
+
+.next-question:hover, .repeat-btn:hover {
+    background-color: rgba(54, 65, 223, 0.9);
+}
+
+.next-question[disabled="true"] {
+    background-color: rgba(54, 65, 223, 0.4);
+    cursor: auto;
+}
+
+.stat-block {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid;
+    width: 25%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+aside {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(197 198 207);
+    color: #fff;
+}
+
+.test-list {
+    margin: 0;
+    padding: 0;
+}
+
+.test-link {
+    font-size: 26px;
+    color: #39394c;
+    border-top: 1px solid;
+    padding: 16px 30px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+.test-link button {
+    display: none;
+}
+
+.create-actions {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.create-actions input {
+    height: 38px;
+    padding: 0 10px;
+    width: 30px;
+}
+
+.create-actions label {
+    position: relative;
+    left: -16px;
+}
+
+.validate-variants {
+    display: none;
+    border: 1px solid red;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    top: 35%;
+    right: 125px;
+}

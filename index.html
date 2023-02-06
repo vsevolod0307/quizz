@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Quizz</title>
+</head>
+<body>
+    <div class="buttons-choice">
+        <div class="create-actions">
+            <button class="repeat-btn create-quizz">Создать свой тест</button>
+            <input type="number" value="5" name="count">
+            <label for="count">Введите кол-во<br>вопросов</label>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="question"></div>
+        <ul class="variants">
+            <div class="variants-wrap">
+                <li class="answer"></li>
+                <input type="checkbox" name="" id="">
+            </div>
+            <div class="variants-wrap">
+                <li class="answer"></li>
+                <input type="checkbox" name="" id="">
+            </div>
+            <div class="variants-wrap">
+                <li class="answer"></li>
+                <input type="checkbox" name="" id="">
+            </div>
+            <div class="variants-wrap">
+                <li class="answer"></li>
+                <input type="checkbox" name="" id="">
+            </div>
+        </ul>
+        <button class="next-question">Следующий вопрос</button>
+    </div>
+    <div class="stat-block">
+        <div class="stat-text"></div>
+        <button class="repeat-btn repeat">Начать заново</button>
+    </div>
+    <div class="validate-variants">
+        Требуется заполнить поле с вопросом<br>Заполнить поля с вариантами ответов<br>И выбрать правильный ответ  
+    </div>
+    <aside>
+    </aside>
+    <script src="/js/index.js"></script>
+</body>
+</html>
